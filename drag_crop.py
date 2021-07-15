@@ -15,8 +15,7 @@ import cv2
 x0 = y0 = -1 #좌표 리셋
 w = h = -1
 isDragging = False
-
-
+img = cv2.imread('./src/dog1.jpg') #파일 객체 설정
 
 def onMouse(event, x, y, flags, param) :
     global isDragging, x0, y0 #, img
@@ -46,9 +45,9 @@ def onMouse(event, x, y, flags, param) :
             else:
                 print("왼쪽 위부터 오른쪽 아래로 드래그해주세요!")
             
-img = cv2.imread('./src/dog1.jpg') #파일 객체 설정
-cv2.imshow('image', img) #Window(사진) open
-cv2.setMouseCallback('image', onMouse)
-cv2.waitKey(0) #키보드 두 번 누르면 윈도우 종료 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+#img = cv2.imread('./src/dog1.jpg') #파일 객체 설정
+#cv2.imshow('image', img) #Window(사진) open
+#cv2.setMouseCallback('image', onMouse)
+#cv2.waitKey(0) #키보드 두 번 누르면 윈도우 종료 
+#cv2.waitKey(0)
+#cv2.destroyAllWindows()
